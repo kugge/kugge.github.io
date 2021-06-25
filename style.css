@@ -3,7 +3,7 @@
 ---------** CREDITS **---------
 
 PALETTE:
-https://coolors.co/355070-6d597a-b56576-e56b6f-eaac8b
+https://coolors.co/ddd8c4-a3c9a8-84b59f-69a297-50808e
 
 BACKGROUND:
 https://www.transparenttextures.com/
@@ -11,9 +11,9 @@ https://www.transparenttextures.com/
 
 :root {
   /* Color scheme */
-  --color0: #355070; /* Almost White */
-  --color1: #6D597A; /* Purple */
-  --color2: #ECBCFD;
+  --color0: #69A297; /* Almost White */
+  --color1: #50808E; /* Purple */
+  --color2: #DDD8C4;
 }
 
 body {
