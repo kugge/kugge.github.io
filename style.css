@@ -11,8 +11,8 @@ https://www.transparenttextures.com/
 
 :root {
   /* Color scheme */
-  --color0: #69A297; /* Almost White */
-  --color1: #50808E; /* Purple */
+  --color0: #69A297;
+  --color1: #50808E;
   --color2: #DDD8C4;
 }
 
@@ -30,13 +30,14 @@ body {
   margin-top: 40px;
   box-shadow: black 0px 5px 10px;
   text-align: center;
-  font-size: 15px;
+  font-size: 17px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
 .article p {
   margin: 20px;
-  font-size: 15px;
+  font-size: 17px;
   font-family: "Times New Roman", Times, serif;
+  color: var(--color2)
 }
