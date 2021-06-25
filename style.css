@@ -1,0 +1,33 @@
+/*
+---------** CREDITS **---------
+
+PALETTE:
+https://coolors.co/ffebfa-f3c4fb-ecbcfd-e5b3fe-e2afff-deaaff-d8bbff-d0d1ff-c8e7ff-c0fdff
+
+BACKGROUND:
+https://www.transparenttextures.com/
+*/
+
+:root {
+  /* Color scheme */
+  --color0: #FFEBFA; /* Almost White */
+  --color1: #F3C4FB; /* Purple */
+  --color2: #ECBCFD;
+  --color3: #E5B3FE;
+  --color4: #D899FF;
+  --color5: #C35CFF; /* Darker color */
+  --color6: #D8BBFF; /* Cyan gradient */
+  --color7: #D0D1FF;
+  --color8: #C8E7FF;
+  --color9: #C0FDFF;
+}
+
+body {
+  background-color: var(--color4);
+  background-image: url("black-twill.png");
+}
+
+div#content {
+  background-color: var(--color5);
+  background-image: url("micro-carbon.png");
+}
