@@ -3,7 +3,7 @@
 ---------** CREDITS **---------
 
 PALETTE:
-https://coolors.co/ddd8c4-a3c9a8-84b59f-69a297-50808e
+https://coolors.co/432371-714674-9f6976-cc8b79-fddbc4
 
 BACKGROUND:
 https://www.transparenttextures.com/
@@ -11,19 +11,17 @@ https://www.transparenttextures.com/
 
 :root {
   /* Color scheme */
-  --color0: #69A297;
-  --color1: #50808E;
-  --color2: #DDD8C4;
+  --background: #714674;
+  --font: #FCCFB0;
 }
 
 body {
-  background-color: var(--color0);
+  background-color: var(--background);
   background-image: url("black-twill.png");
 }
 
 .article {
-  background-color: var(--color1);
-  background-image: url("micro-carbon.png");
+  background-color: black;
   width:800px;
   margin-left: auto;
   margin-right: auto;
@@ -39,5 +37,5 @@ body {
   margin: 20px;
   font-size: 17px;
   font-family: "Times New Roman", Times, serif;
-  color: var(--color2);
+  color: var(--font);
 }
