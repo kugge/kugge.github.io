@@ -35,14 +35,17 @@ hr {
 
 a:link {
   color: var(--linknv);
+  text-decoration: none;
 }
 
 a:hover {
   color: var(--linkh);
+  text-decoration: none;
 }
 
 a:visited {
   color: var(--linkv);
+  text-decoration: none;
 }
 
 
@@ -74,10 +77,9 @@ a:visited {
   color: var(--font);
 }
 
-.article h2 {
+.article h2 { /* h2 are used for hyperlink titles, so no color */
   margin: 20px;
   font-size: 22px;
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
-  color: var(--font);
 }
