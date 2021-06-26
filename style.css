@@ -13,6 +13,8 @@ https://www.transparenttextures.com/
   /* Color scheme */
   --background: #714674;
   --font: #FCCFB0;
+  --linknv: #9B73D4;
+  --linkv: #9F66A3;
 }
 
 body {
@@ -51,5 +53,18 @@ img {
   font-size: 25px;
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
+  color: var(--font);
+}
+
+.article h2 {
+  margin: 20px;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: var(--font);
+}
+
+.article a {
+
   color: var(--font);
 }
