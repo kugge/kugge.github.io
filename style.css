@@ -47,7 +47,7 @@ a:hover {
 }
 
 a:visited {
-  color: var(--linkh);
+  color: var(--linkv);
   text-decoration: none;
 }
 
