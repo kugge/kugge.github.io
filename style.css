@@ -20,6 +20,12 @@ body {
   background-image: url("skulls.png");
 }
 
+img {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
 .article {
   background-color: black;
   width:800px;
@@ -37,5 +43,13 @@ body {
   margin: 20px;
   font-size: 17px;
   font-family: "Times New Roman", Times, serif;
+  color: var(--font);
+}
+
+.article h1 {
+  margin: 20px;
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
   color: var(--font);
 }
