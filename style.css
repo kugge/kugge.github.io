@@ -15,6 +15,7 @@ https://www.transparenttextures.com/
   --font: #FCCFB0;
   --linknv: #9B73D4;
   --linkv: #9F66A3;
+  --linkh: #FEF3EB;
 }
 
 body {
@@ -27,6 +28,23 @@ img {
   image-rendering: -moz-crisp-edges;
   image-rendering: crisp-edges;
 }
+
+hr {
+  color: var(--background);
+}
+
+a:link {
+  color: var(--linknv);
+}
+
+a:hover {
+  color: var(--linkh);
+}
+
+a:visited {
+  color: var(--linkv);
+}
+
 
 .article {
   background-color: black;
@@ -61,10 +79,5 @@ img {
   font-size: 22px;
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
-  color: var(--font);
-}
-
-.article a {
-
   color: var(--font);
 }
