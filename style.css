@@ -52,7 +52,6 @@ a:visited {
   text-decoration: none;
 }
 
-
 .article {
   background-color: black;
   width:600px;
@@ -67,6 +66,24 @@ a:visited {
 }
 
 .article p {
+  margin: 20px;
+  font-size: 17px;
+  font-family: "Times New Roman", Times, serif;
+  color: var(--font);
+}
+
+.iarticle {  /* Invisible article */
+  width:600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  text-align: center;
+  font-size: 17px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.iarticle p {
   margin: 20px;
   font-size: 17px;
   font-family: "Times New Roman", Times, serif;
