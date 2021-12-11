@@ -3,7 +3,7 @@
 ---------** CREDITS **---------
 
 PALETTE:
-https://coolors.co/432371-714674-9f6976-cc8b79-fddbc4
+https://coolors.co/
 
 BACKGROUND:
 https://www.transparenttextures.com/
@@ -14,12 +14,30 @@ https://photomosh.com/
 
 :root {
   /* Color scheme */
-  --background: #714674;
+  --background: #BDB2FF;
   --font: #FCCFB0;
   --linknv: #B78F98;
   --linkv: #B78F98;
   --linkh: #FEF3EB;
 }
+
+/* Floating animation */
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+@font-face {
+  font-family: "cozette";
+  src: url("cozette.ttf");
+}	
 
 body {
   background-color: var(--background);
@@ -32,9 +50,8 @@ img {
   image-rendering: crisp-edges;
 }
 
-hr {
-  border-color: var(--background);
-  border-bottom-width:2px;
+h1 {
+  font-weight: normal;
 }
 
 a:link {
@@ -52,60 +69,37 @@ a:visited {
   text-decoration: none;
 }
 
-.article {
-  background-color: black;
-  width:600px;
+/* https://stackoverflow.com/questions/396145 */
+.outer {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.inner {
+  font-family: "cozette";
+  font-weight: normal;
+  -webkit-font-smoothing: none;
+  font-smooth: never;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 40px;
-  box-shadow: black 0px 5px 10px;
-  text-align: center;
-  font-size: 17px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  width: 300px;
+  /* Whatever width you want */
 }
 
-.article p {
-  margin: 20px;
-  font-size: 17px;
-  font-family: "Times New Roman", Times, serif;
-  color: var(--font);
+.avatar {
+	overflow: hidden;
+	transform: translatey(0px);
+	animation: float 3s ease-in-out infinite;
+	img { width: 100%; height: auto; }
 }
 
-.iarticle {  /* Invisible article */
-  width:600px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 40px;
-  text-align: center;
-  font-size: 17px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.iarticle p {
-  margin: 20px;
-  font-size: 17px;
-  font-family: "Times New Roman", Times, serif;
-  color: var(--font);
-}
-
-.article h1 {
-  margin: 20px;
-  font-size: 27px;
-  font-family: "Times New Roman", Times, serif;
-  font-weight: bold;
-  color: var(--font);
-}
-
-.article h2 { /* h2 are used for hyperlink titles, so no color */
-  margin: 20px;
-  font-size: 22px;
-  font-family: "Times New Roman", Times, serif;
-  font-weight: bold;
-}
-
-.flex {
-  display: flex;
-  justify-content: space-evenly;
-}
