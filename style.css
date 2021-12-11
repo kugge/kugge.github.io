@@ -54,6 +54,20 @@ h1 {
   font-weight: normal;
 }
 
+/* https://stackoverflow.com/questions/45134400 */
+flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+flex-container::before {
+  content: "";
+}
+
+flex-container::after {
+  content: "";
+}
+
 a:link {
   color: var(--linknv);
   text-decoration: none;
@@ -67,6 +81,11 @@ a:hover {
 a:visited {
   color: var(--linkv);
   text-decoration: none;
+}
+
+.icon {
+    color: black;
+    font-size: 1.5em;
 }
 
 /* https://stackoverflow.com/questions/396145 */
@@ -93,7 +112,6 @@ a:visited {
   margin-left: auto;
   margin-right: auto;
   width: 300px;
-  /* Whatever width you want */
 }
 
 .avatar {
