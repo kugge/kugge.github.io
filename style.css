@@ -27,7 +27,7 @@ https://photomosh.com/
 		transform: translatey(0px);
 	}
 	50% {
-		transform: translatey(-20px);
+		transform: translatey(-50px);
 	}
 	100% {
 		transform: translatey(0px);
@@ -119,5 +119,9 @@ a:visited {
 	transform: translatey(0px);
 	animation: float 3s ease-in-out infinite;
 	img { width: 100%; height: auto; }
+}
+
+.caption {
+    display: block;
 }
 
